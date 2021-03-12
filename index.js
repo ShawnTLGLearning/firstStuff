@@ -3,7 +3,7 @@ const cors = require("cors");
 const MongoClient = require("mongodb").MongoClient;
 ObjectId = require("mongodb").ObjectId;
 const server = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 server.use(cors());
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
