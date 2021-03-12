@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Profiles</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+  <body>
+    <button class="btn btn-primary" id="profile_btn">Get Profiles</button>
+
+    <div id="profiles_container"></div>
+    <form>
+      <input type="text" placeholder="name" name="name" />
+      <input type="text" placeholder="role" name="role" />
+      <input type="text" placeholder="company" name="company" />
+      <input type="url" placeholder="linkedin" name="linkedin" />
+      <input type="url" placeholder="picture" name="picture" id="picture" />
+      <button type="submit">Submit</button>
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
