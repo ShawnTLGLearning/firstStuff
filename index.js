@@ -21,11 +21,11 @@ server.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-MongoClient.connect(localDb, { useUnifiedTopology: true })
+MongoClient.connect(atlasURL, { useUnifiedTopology: true })
   .then((client) => {
     db = client.db(dbName);
 
-    console.log(`Connected MongoDB: ${localDb}`);
+    console.log(`Connected MongoDB: ${atlasURL}`);
     console.log(`Database: ${dbName}`);
 
     const quotesCollection = db.collection("quotes");
